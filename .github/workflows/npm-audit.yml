@@ -2,8 +2,9 @@ name: Weekly Dependency Security Audit
 
 on:
   schedule:
+    # Runs every Monday at 09:00 UTC
     - cron: '0 9 * * 1'
-  workflow_dispatch:
+  workflow_dispatch: # Allows manual trigger from GitHub Actions tab
 
 permissions:
   contents: read
